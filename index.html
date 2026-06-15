@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP Fast Food and Restaurant | Delicious Flavors, Fast Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50 text-neutral-800">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-neutral-900/95 backdrop-blur-md shadow-lg border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl sm:text-2xl font-bold text-amber-500 tracking-wide flex items-center gap-2">
+                        <i class="fa-solid fa-utensils"></i> RP <span class="text-white font-light text-lg sm:text-xl hidden sm:inline">Fast Food</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-amber-500 transition-colors duration-200 font-medium">Home</a>
+                    <a href="#menu" class="text-gray-300 hover:text-amber-500 transition-colors duration-200 font-medium">Menu</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-amber-500 transition-colors duration-200 font-medium">Reviews</a>
+                    <a href="#contact" class="text-gray-300 hover:text-amber-500 transition-colors duration-200 font-medium">Contact</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" type="button" class="text-gray-400 hover:text-white focus:outline-none" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-t border-neutral-800 px-4 pt-2 pb-4 space-y-1 shadow-inner">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-neutral-800 hover:text-amber-500 transition-all">Home</a>
+            <a href="#menu" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-neutral-800 hover:text-amber-500 transition-all">Menu</a>
+            <a href="#reviews" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-neutral-800 hover:text-amber-500 transition-all">Reviews</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-neutral-800 hover:text-amber-500 transition-all">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg">
+        <div class="text-center px-4 sm:px-6 max-w-4xl mx-auto mt-16">
+            <span class="inline-block px-4 py-1.5 mb-4 rounded-full text-xs sm:text-sm font-semibold tracking-wider text-amber-500 bg-amber-500/10 border border-amber-500/30 uppercase animate-pulse">
+                Now Serving Happiness
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-black tracking-tight leading-tight">
+                Welcome to <span class="text-amber-500">RP Fast Food</span> & Restaurant
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-gray-800 font-light max-w-2xl mx-auto">
+                Delicious flavors, fast service, and unforgettable moments. Experience authentic culinary delights today.
+            </p>
+            <div class="mt-10">
+                <a href="#menu" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-neutral-900 bg-amber-500 hover:bg-amber-400 shadow-lg shadow-amber-500/20 transform hover:-translate-y-0.5 transition-all duration-200">
+                    Explore Our Menu
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg class="w-full h-12 text-gray-50 fill-current" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1440V0C1440 0 1140 48 720 48C300 48 0 0 0 0V48Z"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="menu" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Our Signature Menu</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            <p class="mt-4 text-gray-600">Freshly prepared with high-quality ingredients and traditional spices. Select your favorites to begin your order.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/cardamom-tea4.webp" alt="Chiya" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Chiya </h3>
+                        <p class="text-sm text-gray-500 mt-1"> Masala Milk tea </p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 25</span>
+                    <button onclick="addToOrder('Chiya', 25)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/samosa.jpg" alt="Samosa" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Samosa</h3>
+                        <p class="text-sm text-gray-500 mt-1">Crispy pastry filled with perfectly spiced potatoes and peas.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 25</span>
+                    <button onclick="addToOrder('Samosa', 25)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/chowmine.jpg" alt="Chowmine" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Chowmine</h3>
+                        <p class="text-sm text-gray-500 mt-1">Stir-fried noodles loaded with fresh veggies and savory sauces.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 100</span>
+                    <button onclick="addToOrder('Chowmine', 100)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/momo.jpg" alt="Mo:Mo" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Mo:Mo</h3>
+                        <p class="text-sm text-gray-500 mt-1">Steamed dumplings served with a distinct, spicy sesame chutney.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 120</span>
+                    <button onclick="addToOrder('Mo:Mo', 120)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/chicken roast.jpg" alt="Chicken Roast" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Chicken Roast</h3>
+                        <p class="text-sm text-gray-500 mt-1">Tender roasted chicken with crisp skin and deep local seasonings.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 250</span>
+                    <button onclick="addToOrder('Chicken Roast', 250)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/chicken chilly.jpg" alt="Chicken Chilly" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Chicken Chilly</h3>
+                        <p class="text-sm text-gray-500 mt-1">Spicy, sweet, and tangy stir-fried chicken chunks with bell peppers.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 300</span>
+                    <button onclick="addToOrder('Chicken Chilly', 300)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                <div>
+                    <div class="relative overflow-hidden h-48">
+                        <img src="./images/lolipop.jpg" alt="Chicken Lolipop" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-neutral-900">Chicken Lolipop</h3>
+                        <p class="text-sm text-gray-500 mt-1">Crispy, deep-fried chicken wings served with specialized dipping sauce.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-neutral-900">Rs. 300</span>
+                    <button onclick="addToOrder('Chicken Lolipop', 300)" class="px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-600 hover:text-white rounded-xl text-sm font-semibold transition-colors duration-200">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 max-w-xl mx-auto bg-white border border-gray-100 rounded-3xl shadow-xl p-6 sm:p-8 text-center relative overflow-hidden">
+            <div class="absolute top-0 inset-x-0 h-2 bg-[#60bb46]"></div>
+            <h3 class="text-2xl font-bold text-neutral-900">Order & Pay Online</h3>
+            <p class="text-gray-500 mt-2 text-sm">Select items from the menu above to compute your live summary and skip the line.</p>
+            
+            <div id="cart-preview" class="my-6 p-4 bg-gray-50 rounded-2xl border border-dashed border-gray-200 text-gray-600 text-sm">
+                No items added to your order yet.
+            </div>
+
+            <button onclick="openEsewaModal()" class="w-full inline-flex items-center justify-center gap-3 px-6 py-4 bg-[#60bb46] hover:bg-[#52a23b] text-white font-semibold rounded-2xl text-lg shadow-lg shadow-green-600/20 transform active:scale-[0.98] transition-all duration-150">
+                <i class="fa-solid fa-wallet"></i> Pay with eSewa
+            </button>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-neutral-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">What Our Customers Say</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-neutral-800/60 border border-neutral-700/50 p-8 rounded-2xl flex flex-col justify-between backdrop-blur-sm">
+                    <p class="text-gray-300 italic leading-relaxed">
+                        "The Mo:Mo here is legendary! Unmatched juice levels and the sesame chutney is absolutely authentic. My daily spot for high quality fast food."
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-500 font-bold">AS</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Anish Shrestha</h4>
+                            <div class="flex text-amber-400 text-xs mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-800/60 border border-neutral-700/50 p-8 rounded-2xl flex flex-col justify-between backdrop-blur-sm">
+                    <p class="text-gray-300 italic leading-relaxed">
+                        "Unbelievably fast service. I dropped by during a hectic work break, ordered Chowmine and Chiya, and it was piping hot on my table in minutes!"
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-500 font-bold">PK</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Prerana Khanal</h4>
+                            <div class="flex text-amber-400 text-xs mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-800/60 border border-neutral-700/50 p-8 rounded-2xl flex flex-col justify-between backdrop-blur-sm">
+                    <p class="text-gray-300 italic leading-relaxed">
+                        "RP Fast Food hits the sweet spot for flavor, clean preparation, and affordability. Their Chicken Chilly has the perfect level of punch."
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-500 font-bold">RB</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Rohan Basnet</h4>
+                            <div class="flex text-amber-400 text-xs mt-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Visit Us Today</h2>
+                    <div class="w-16 h-1 bg-amber-500 mt-4 rounded-full"></div>
+                    <p class="mt-4 text-gray-600">We are conveniently located in the heart of the city. Come over to experience standard hospitality and unforgettable flavors.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-neutral-900">Physical Address</h4>
+                            <p class="text-gray-600 text-sm mt-0.5">V. P. Marg, Tilottama, Lumbini Province, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-neutral-900">Opening Hours</h4>
+                            <p class="text-gray-600 text-sm mt-0.5">Everyday: 06:00 AM - 9:00 PM</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Responsive Google Maps Container (Forced 2D Map View for Your Storefront) -->
+<div class="w-full h-80 sm:h-96 rounded-3xl overflow-hidden shadow-md border border-gray-100">
+    <iframe 
+        src="https://maps.google.com/maps?q=27.632455,83.463035&t=m&z=17&output=embed" 
+        class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 text-gray-400 pt-16 pb-8 border-t border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold text-white tracking-wide">RP Fast Food & Restaurant</h3>
+                <p class="text-sm text-gray-500 max-w-xs">Serving clean, quick, and remarkably tasty street delicacies and local favorites since our foundation.</p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Quick Navigation</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#home" class="hover:text-amber-500 transition-colors">Home</a>
+                    <a href="#menu" class="hover:text-amber-500 transition-colors">Our Menu</a>
+                    <a href="#reviews" class="hover:text-amber-500 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-amber-500 transition-colors">Location</a>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Connect With Us</h4>
+                <p class="text-sm">
+                    <a href="mailto:rupakpokhrel07@gmail.com" class="text-amber-500 hover:underline flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-xs"></i> rupakpokhrel07@gmail.com
+                    </a>
+                </p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-neutral-900 hover:bg-amber-500 text-gray-400 hover:text-neutral-950 flex items-center justify-center transition-all duration-200" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-neutral-900 hover:bg-amber-500 text-gray-400 hover:text-neutral-950 flex items-center justify-center transition-all duration-200" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-neutral-900/60 text-center text-xs text-gray-600">
+            © 2026 RP Fast Food and Restaurant. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="esewa-modal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-neutral-950/70 backdrop-blur-sm transition-opacity" onclick="closeEsewaModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
+            
+            <div class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full border border-gray-100">
+                <div class="bg-[#60bb46] px-6 py-4 flex items-center justify-between">
+                    <span class="text-white font-bold flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i> eSewa Checkout Simulator</span>
+                    <button onclick="closeEsewaModal()" class="text-white/80 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                
+                <div class="p-6">
+                    <h4 class="text-lg font-bold text-neutral-900">Order Summary</h4>
+                    <div id="modal-items-list" class="mt-4 space-y-2 border-b border-gray-100 pb-4 max-h-40 overflow-y-auto"></div>
+                    <div class="flex justify-between items-center mt-4 pt-1">
+                        <span class="text-sm text-gray-500 font-medium">Grand Total amount</span>
+                        <span id="modal-total-price" class="text-2xl font-black text-[#60bb46]">Rs. 0</span>
+                    </div>
+                    <div class="mt-6 space-y-2">
+                        <button onclick="executePaymentMockup()" class="w-full py-3.5 px-4 bg-[#60bb46] hover:bg-[#52a23b] text-white font-medium rounded-xl transition-all shadow-md shadow-green-600/10 flex items-center justify-center gap-2">
+                            Proceed to eSewa Secure Payment
+                        </button>
+                        <button onclick="closeEsewaModal()" class="w-full py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium rounded-xl text-sm transition-all">
+                            Cancel Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
